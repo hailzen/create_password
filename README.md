@@ -20,7 +20,7 @@ There are two ways to generate password from it
 ### First (open) 
 
     python password.py -p passphrase 
-passphrase is actual passphrase
+**passphrase is actual passphrase**
 
 The **Output** will be password. For eg:
 
@@ -30,13 +30,17 @@ The **Output** will be password. For eg:
 Then you can copy and paste 
 
 ### Second (secret) {Reccomended}
-Type
+In second method password will be pasted in clipoard and to do it it needs a module called pyperclip so to install it type
+
+    pip install pyperclip
+
+Then type command
 
     python password.py
 **Then blank screen appears write passphrase there it wont show passphrase beacause it is secret**
 
-After you enter your pass phrase click enter then password will be copied in your clipboard then you can paste it by *Ctrl+v*
-## At Last
+After you enter your pass phrase click enter then **password will be copied in your clipboard** then you can paste it by *Ctrl+v*
+## For Length of password
 
 Defult length of password is 21 if you want to change it then with any text editor open password.py and in line *55* there is :
 
@@ -47,4 +51,24 @@ To change length change value between **1-31**
 for eg to get password of length 26 change will look like
 
     length = 26
+## One Last
+If you wanted to use it as a command in linux then follow these commands
 
+
+    cd create_password    
+
+    chmod +x password.py
+
+    mv password.py command
+ 
+ **Command is actual command** For Eg:
+ 
+    mv password.py pswd
+
+And at last type
+
+    sudo mv pswd /bin
+
+Type password then it will be Command then you can use it by just typing
+
+    pswd
