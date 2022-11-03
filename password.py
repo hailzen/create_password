@@ -1,5 +1,6 @@
 #!/bin/python3
 
+##this is done for just fun and nothing more so dont take it serously
 import hashlib,argparse,getpass #Importing modules necessary [hashlib for genereting hash],[argparse for getting input from command], [get pass for getting input secretly] 
 
 def sha(string): #A function to take a string and convert it into sha256
